@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+.Home{
+    display: flex;
+    flex-direction: column;
+}
+
+.Title{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.TitleDescWImg{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.TitleDescription{
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    color: #636363;
+    width: 60%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#CovidImage{
+    width:65px;
+    height: 57.9px;
+}
+
+.CountryPicker{
+    margin-top: 50%;
+}
+
+.DataDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.CountryName{
+    margin: 20% 10%;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Data{
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    color: #636363;
+    width: 60%;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 800px) {
+    .DataDiv{
+        display: flex;
+        flex-direction: row;
+    }  
+    
+    .CountryName{
+        margin: 10% 10%;
+    }
+}
