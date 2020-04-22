@@ -25,3 +25,13 @@ export const fetchCountries = async () => {
         console.log(error);
     }
 }
+
+export const fetchStates = async (country, fieldClicked) => {
+    try{
+        const data = await axios.get(url + '/countries/' + country + '/' + fieldClicked)
+
+        return {data: data};
+    } catch(error){
+        console.log(error);
+    }
+}

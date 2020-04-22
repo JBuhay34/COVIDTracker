@@ -52,10 +52,11 @@
 .Data{
     margin-left: 10%;
     font-family: 'Montserrat', sans-serif;
-    color: #636363;
+    color: #d13333;
     width: 60%;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    margin-right: 10%;
+    margin-top: 5%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -73,5 +74,11 @@
     #CovidImage{
         width:150px;
         height: 147.9px;
+    }
+    .Data{
+        font-weight: 600;
+        font-size: 35px;
+        margin-top: 0;
+        margin-right: 10%;
     }
 }
