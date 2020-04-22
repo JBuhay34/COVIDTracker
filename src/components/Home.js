@@ -31,6 +31,7 @@ export class Home extends Component {
     render() {
         const { data:{confirmed, recovered, deaths, lastUpdate} } = this.state;
         const {country} = this.state;
+
         if(!confirmed){
             return 'Loading...';
         }
@@ -43,7 +44,7 @@ export class Home extends Component {
                 </div>
                 <CountryPicker className="CountryPicker" handleCountryChange={this.handleCountryChange}/>
 
-                <h1 className="CountryName">{country}</h1>
+                <h1 className="CountryName">{(country==="") ? "Global" : country}</h1>
                 <div className="DataDiv">
                     <p className="Data">Confirmed: {confirmed.value}</p>
                     <p className="Data">Deaths: {deaths.value}</p>
